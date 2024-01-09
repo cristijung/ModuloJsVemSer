@@ -46,3 +46,5 @@ function resetarCount() {
 function atualizar(count) {
     document.getElementById("trocar").innerText = count;
 }
+
+
