@@ -31,12 +31,37 @@ const lista = meninas.concat(meninos);
 console.log(lista);
 
 //reduce
+//reduce primeira forma
+const salaJss = [6, 7, 8, 9, 10, 4];
+const salaJavas = [3, 10, 9, 9, 10, 8];
+const salaReacts = [5, 10, 8, 3];
+
+function calcMedia(mediaDeSala) {
+    const somaDasNotass = mediaDeSala.reduce((acumulado, nota, index) => acumulado + nota, 0);
+    const medias = somaDasNotass / mediaDeSala.length;
+    return medias;
+}
+
+console.log(`A média da sala de Js é: ${calcMedia(salaJss)}`);
+console.log(`A média da sala de Java é: ${calcMedia(salaJavas)}`);
+console.log(`A média da sala de React é: ${calcMedia(salaReacts)}`);
+
+
+//reduce segunda forma com + 1 parâmetro
 const salaJs = [6, 7, 8, 9, 10, 4];
 const salaJava = [3, 10, 9, 9, 10, 8];
 const salaReact = [5, 10, 8, 3];
 
 function calcMedia(mediaDeSala) {
-    const somaDasNotas = mediaDeSala.reduce((acumulado, nota, index) => acumulado + nota, 0);
+    const somaDasNotas = mediaDeSala.reduce((acumulador, valor, index, arr) => {
+            if (index === arr.length - 1) {
+              acumulador = acumulador / arr.length;
+            } else {
+              acumulador += valor;
+            }
+            return acumulador;
+          }
+    );
     const media = somaDasNotas / mediaDeSala.length;
     return media;
 }
