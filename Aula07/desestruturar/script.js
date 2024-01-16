@@ -5,7 +5,7 @@ console.log(nome);
 console.log(idade);
 console.log(altura);
 
-//parâmetro de funçÕ
+//parâmetro de função
 function printDados( { name, age }) {
     console.log(`Nome: ${name}, idade: ${age}`);
 }

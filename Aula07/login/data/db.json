@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "d2c6",
+      "username": "teste",
+      "password": "123"
+    },
+    {
+      "id": "e578",
+      "username": "cristina",
+      "password": "123"
+    },
+    {
+      "id": "2630",
+      "username": "ana",
+      "password": "123"
+    },
+    {
+      "id": "eb53",
+      "username": "Pafuncio",
+      "password": "123"
+    },
+    {
+      "id": "3254",
+      "username": "user",
+      "password": "123"
+    },
+    {
+      "id": "7620",
+      "username": "Ani",
+      "password": "123"
+    },
+    {
+      "id": "58a0",
+      "username": "Lele",
+      "password": "123"
+    }
+  ]
+}
