@@ -1,6 +1,7 @@
 # Instalação
 
 ## Comandos
+- `npm init -y`
 - Instalação do JsonServer: `npm install -g json-server`;
 - Comando para Rodar: `json-server --watch db.json`;
 - Inserir o código abaixo no arquivo package.json: `{
