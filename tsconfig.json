@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "es5", 
+      "lib": ["es2015", "DOM"],
+                        /* Versão do ECMAScript para a qual o código TypeScript será compilado */
+      "module": "commonjs",               /* Formato do módulo para o código compilado */
+      "strict": true,                     /* Ativa todas as opções de verificação de tipo rigoroso */
+      "esModuleInterop": true,             /* Permite a interoperabilidade de módulos entre CommonJS e ES Modules */
+      "skipLibCheck": true,                /* Evita a verificação de tipos nos arquivos de definição de bibliotecas */
+      "forceConsistentCasingInFileNames": true /* Garante consistência nos nomes de arquivo (maiúsculas/minúsculas) */
+    },
+    "include": [
+      "Typescript/AulasTs/Aula02/*.ts", "tsconfig.json"                      /* Padrão que especifica quais arquivos TypeScript incluir na compilação */
+    ],
+    "exclude": [
+      "node_modules"                     /* Pastas ou arquivos a serem excluídos da compilação */
+    ]
+  }
+  
